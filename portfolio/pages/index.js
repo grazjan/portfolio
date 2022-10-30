@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import CodeWindow from '../components/CodeWindow/CodeWindow'
+import Headline from '../components/Headline/Headline'
 
 export default function Home() {
   return (
@@ -10,8 +11,7 @@ export default function Home() {
         <meta name="description" content="Homepag" />
       </Head>
       <div className="d-flex">
-        <p className='topline'>Lorem ipsum</p>
-        <h1>Lorem ipsum<br/>dolor sit amet</h1>
+        <Headline semantic="h1" topline="Lorem ipsum">Hallo World</Headline>
         <CodeWindow/>
       </div>
     </div>
