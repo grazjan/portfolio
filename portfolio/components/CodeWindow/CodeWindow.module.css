@@ -1,0 +1,63 @@
+
+/* VARIABLES */
+/* -------------------------------------------------- */
+
+.codewindow {
+    --bar-bg: #4b4b4b;
+    --window-bg: #292523;
+    --btn-close: #ee4f4b;
+    --btn-minimalize: #f8bd32;
+    --btn-expand: #61ca43;
+}
+
+
+/* Code Window */
+/* -------------------------------------------------- */
+
+.codewindow {
+   height: 250px;
+   background-color: var(--window-bg)
+}
+
+.codewindow .bar {
+    background: var(--bar-bg);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+ }
+
+
+/* Code Control buttons */
+/* -------------------------------------------------- */
+
+
+.codewindow .barControls {
+    display: inline-flex;
+}
+
+.codewindow .barControls .btnBar {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    margin: 0.25rem;
+}
+
+.codewindow .barControls .btnBar.btnClose {
+    background: var(--btn-close)
+}
+
+.codewindow .barControls .btnBar.btnMinimalize {
+    background: var(--btn-minimalize)
+}
+
+.codewindow .barControls .btnBar.btnExpand {
+    background: var(--btn-expand)
+}
+
+
+/* Code Window code area */
+/* -------------------------------------------------- */
+
+.codewindow pre {
+    margin: 1rem 0.5rem;
+}

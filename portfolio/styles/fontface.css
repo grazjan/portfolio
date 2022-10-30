@@ -1,0 +1,40 @@
+/* source-sans-pro - latin */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    src: url('../fonts/sourcesans/source-sans-pro-v21-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-300.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('../fonts/sourcesans/source-sans-pro-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url('../fonts/sourcesans/source-sans-pro-v21-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-600.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/sourcesans/source-sans-pro-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/sourcesans/source-sans-pro-v21-latin-700.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
