@@ -5,7 +5,7 @@
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 1.75px;
-    background: -webkit-linear-gradient(230deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
