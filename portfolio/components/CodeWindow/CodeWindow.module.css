@@ -8,6 +8,8 @@
     --btn-close: #ee4f4b;
     --btn-minimalize: #f8bd32;
     --btn-expand: #61ca43;
+    --font-color: #389edb;
+    --font-color-function: #dcdca4;
 }
 
 
@@ -60,4 +62,14 @@
 
 .codewindow pre {
     margin: 1rem 0.5rem;
+}
+
+.codewindow pre code {
+    color: var(--color-white);
+}
+
+@media (max-width: 767px) {
+    .codewindow pre code {
+        white-space: normal
+    }
 }

@@ -1,0 +1,126 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+}
+
+
+/* Hamburger */
+/* -------------------------------------------------- */
+
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        top: 32px;
+        right: 48px;
+    }
+}
+
+.hamburger .line {
+    width: 34px;
+    height: 3px;
+    margin-bottom: 7px;
+    background: #fff;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.hamburger .line:nth-child(2) {
+    transition: .6s;
+}
+
+/* Animate hamburger */
+.hamburger.triggered .line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.triggered .line:nth-child(2) {
+    transform: translateX(-40px);
+    opacity: 0;
+
+}
+.hamburger.triggered .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+/* Main Navigation - list */
+/* -------------------------------------------------- */
+
+.mainNavigation  {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: var(--gradient-color);
+    transition: all .3s;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+}
+@media (min-width: 768px) {
+    .mainNavigation {
+        padding: 80px;
+    }
+}
+.mainNavigation.open {
+    visibility: visible;
+    opacity: 1;
+}
+.mainNavigation nav {
+    height: 100%;
+}
+.mainNavigation .menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: all .6s;
+}
+.mainNavigation.open .menu {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.mainNavigation .menuItem a {
+    color: #fff;
+    padding: 0.65rem 1rem;
+    display: block;
+    font-size: 32px;
+}
+
+
+/* Main Navigation - social media */
+/* -------------------------------------------------- */
+
+.mainNavigation .socialmedia {
+    display: inline-flex;
+}
+.mainNavigation .socialmedia a {
+    padding: 0.5rem;
+}
+.mainNavigation .socialmedia svg{
+    fill: var(--white-color);
+    width: 24px;
+    height: 24px;
+}

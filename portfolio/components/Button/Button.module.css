@@ -3,12 +3,11 @@
 
 .btn {
     display: inline-block;
-    padding: 1rem 0.85rem;
+    padding: 0.8rem 1.25rem;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.25px;
     width: auto;
-    transition: .4s;
     border-radius: 20px;
 }
 
@@ -17,16 +16,12 @@
 /* -------------------------------------------------- */
 
 .primary {
-    background: var(--primary-color);
+    background: var(--gradient-color);
     color: #fff;
+    opacity: 1;
 }
 .primary:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
     opacity: 1;
-    background: var(--black-color);
-}
-@media (prefers-color-scheme: dark) {
-    .primary:hover {
-        background: var(--white-color);
-        color: var(--primary-color)
-    }
 }
