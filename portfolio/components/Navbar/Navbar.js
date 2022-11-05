@@ -33,16 +33,16 @@ const Navbar = () => {
                     {/* NAVIGATION */}
                     <ul className={`${styles.menu}`} aria-lebel="Main Menu" itemScope itemType="http://www.schema.org/SiteNavigationElement" >
                         <li className={styles.menuItem} itemProp="name">
-                            <Link itemProp="url" href="/">Home</Link>
+                            <Link onClick={() => setMenuActive(false)} itemProp="url" href="/">Home</Link>
                         </li>
                         <li className={styles.menuItem} itemProp="name">
-                            <Link itemProp="url" href="/about">About</Link>
+                            <Link onClick={() => setMenuActive(false)} itemProp="url" href="/about">About</Link>
                         </li>
                         <li className={styles.menuItem} itemProp="name">
-                            <Link itemProp="url" href="/my-projects">My Projects</Link>
+                            <Link onClick={() => setMenuActive(false)} itemProp="url" href="/my-projects">My Projects</Link>
                         </li>
                         <li className={styles.menuItem} itemProp="name">
-                            <Link itemProp="url" href="/contact">Contact me</Link>
+                            <Link onClick={() => setMenuActive(false)} itemProp="url" href="/contact">Contact me</Link>
                         </li>
                     </ul>
                 </nav>

@@ -12,7 +12,6 @@ export default function Home() {
         <title>Home | Gracjan Drodek</title>
         <meta name="description" content="Homepage" />
       </Head>
-      <Navbar/>
       <div className="row h-100vh align-items-center">
         <div className="col-sm-12 col-lg-6">
           <Headline semantic="h1" topline="Lorem ipsum">Hello World</Headline>

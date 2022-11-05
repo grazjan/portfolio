@@ -9,10 +9,11 @@ const CodeWindow = () => {
 
   useEffect(() => {
     typeAnimation();
-  }, [])
+  }, []);
 
   const typeAnimation = () => {
     const text = `export default HelloWorld = () => {${'\n\t'}<div>Hello World</div> ${'\n'}}`
+    
     let textArr = text.split('');
     let i = 0;
 
@@ -46,8 +47,8 @@ const CodeWindow = () => {
         <pre>
           <code> 
             {typingAnimation}
-            <span className={`${styles.typingSymbol} ${typeSymbolAnimation ? styles.active : ''}`}>|</span>
           </code>
+          <span className={`${styles.typingSymbol} ${typeSymbolAnimation ? styles.active : ''}`}>|</span>
         </pre>
       </div>
     </div>
