@@ -73,3 +73,22 @@
         white-space: normal
     }
 }
+
+
+/* Code Window Typing symbol animation */
+/* -------------------------------------------------- */
+
+.codewindow .typingSymbol.active {
+    animation: 1s infinite linear typingSymbolAnimation;
+}
+@keyframes typingSymbolAnimation {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}

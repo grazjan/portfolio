@@ -5,28 +5,32 @@ import styles from './CodeWindow.module.css'
 const CodeWindow = () => {
 
   const [typingAnimation, setTypingAnimation] = useState('');
+  const [typeSymbolAnimation, setTypeSymbolAnimation] = useState(false);
+
   useEffect(() => {
     typeAnimation();
   }, [])
 
   const typeAnimation = () => {
-    const text = `export default Hello World = () => {${'\n\t'}<div>Hello World</div> ${'\n'}}`
+    const text = `export default HelloWorld = () => {${'\n\t'}<div>Hello World</div> ${'\n'}}`
     let textArr = text.split('');
     let i = 0;
 
     let typed = "";
 
-    // Interval
+    // Interval 
     let typeInterval = setInterval(() => {
 
-      if(i == textArr.length-1) clearInterval(typeInterval)
+      if(i == textArr.length-1) { 
+        clearInterval(typeInterval);
+        setTypeSymbolAnimation(true);
+      }
 
       typed = typed + textArr[i]
       setTypingAnimation(typed)
       i++;
     }, 50)
-
-  
+    
   }
 
   return (
@@ -40,8 +44,9 @@ const CodeWindow = () => {
       </div>
       <div className={styles.code}>
         <pre>
-          <code>
+          <code> 
             {typingAnimation}
+            <span className={`${styles.typingSymbol} ${typeSymbolAnimation ? styles.active : ''}`}>|</span>
           </code>
         </pre>
       </div>
